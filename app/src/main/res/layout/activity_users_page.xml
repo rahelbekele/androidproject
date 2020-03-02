@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:padding="10dp"
+    tools:context="com.androidcodegeeks.usermanagement.UsersPageActivity">
+
+    <TextView
+        android:id="@+id/un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your User Name is :"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/un1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/un"
+        android:text=""
+        android:textColor="#F44336"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/un"
+        android:layout_marginTop="20dp"
+        android:text="Your Password is :"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/un1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/pass"
+        android:text=""
+        android:textColor="#F44336"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/see_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="load"
+        android:text="See Your account"
+        android:textAllCaps="false"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/see_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="logout"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/goto_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="gotoRV"
+        android:text="Show Detail"
+        android:textAllCaps="false"
+        android:textSize="30dp" />
+</RelativeLayout>
